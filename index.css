@@ -1,0 +1,100 @@
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+}
+
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: black;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: white    ;
+    position: relative;
+}
+
+  .container::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('./assets/dps-pinturaaplicada02.jpg');
+    background-size: cover;
+    filter: grayscale(0.1);
+  }
+
+  .container-inside {
+    position: relative;
+    font: 20px sans-serif;
+    text-align: center
+    ;
+  }
+
+  .frame-area {
+    height: 95vh;
+    width: 90vw;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+
+
+  .icon {
+    font-size: 70px;
+  }
+
+  .info-text-container{
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .info-text-container > p{
+    margin-bottom: 30px;
+  }
+
+.contact-area {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.contact-area > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+}
+
+.contact-icons{
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.fontawesome-envelope-alt{
+    font-size: 18px;
+}
+
+
+
